@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GWS 9 INSTALL</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <style>
+    body{
+      background-image: linear-gradient(to bottom right, purple , indigo, blue, yellow , red);
+      background-attachment: fixed;
+    }
+    textarea{
+      width: 100%;
+      background: transparent;
+      color white;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea name="logs" id="upd" rows="10"></textarea>
+  <a href="https://operatingsyste.github.io/GWS9/" id="boot"></a>
+  
+  <!-- Project -->
+  <script>
+    var logs = document.getElementById("upd");
+setTimeout(function(){
+  logs.innerHTML = 'downloading GWS9.os';
+}, 1000);
+setTimeout(function(){
+  logs.innerHTML = "installing GWS9...";
+}, 5000);
+setTimeout(function(){
+  logs.innerHTML = 'Installation done with status success!!';
+  document.getElementById("boot").click();
+}, 9000);
+    
+  </script>
+</body>
+</html>
